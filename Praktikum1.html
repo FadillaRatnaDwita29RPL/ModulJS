@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootlibrary/css/bootstrap.min.css">
+    <title>Praktikum 1 - Alert javascript</title>
+    <script src="bootlibrary/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="card col-sm-4">
+            <div class="card-header bg-warning text-white">
+              <h4>Basic Alert</h4>
+            </div>
+            <div class="card-body">
+              <button type="button" class="btn btn-danger"
+              onclick="alert('Thank you for your click')">
+                Click on Me
+              </button>
+              <button type="button" class="btn btn-warning"
+              onmouseover="alert('Thank you for your hover')">
+                Hover on Me
+              </button>
+            </div>
+          </div>
+          
+         
+          
+          <div class="card col-sm-4">
+            <div class="card-header bg-danger text-white">
+              <h4>Dynamic Alert</h4>
+            </div>
+            <div class="card-body">
+              <input type="text" id="message" class="form-control">
+              <button type="button" class="btn btn-danger"onclick="alert(document.getElementById('message').value)">Show</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+</body>
+</html>

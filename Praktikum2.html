@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootlibrary/css/bootstrap.min.css">
+    <title>Praktikum 2 - Set & Get Value JavaScript</title>
+    <script src="bootlibrary/js/bootstrap.js"></script>
+    <script type="text/javascript">
+        count = () =>{
+      // mengambil nilai dari elemen (get value)
+        let alas = document.getElementById('alas').value;
+        let tinggi = document.getElementById('tinggi').value;
+        let hasilluas = alas * tinggi / 2;
+        let sisimiring = Math.sqrt(Math.pow(alas, 2) + Math.pow(tinggi, 2));
+        
+        // menentukan nilai pada elemen (set value)
+        document.getElementById('hasilluas').value = hasilluas;
+        document.getElementById('sisimiring').value = sisimiring;
+      }
+
+    </script>
+</head>
+<body>
+    <div class="container" >
+        <div class="card col-sm-4">
+          <div class="card-header bg-info text-white">
+            <h4>Perhitungan Segitiga</h4>
+          </div>
+          <div class="card-body">
+            Alas <input type="number" id="alas" class="form-control">
+            Tinggi <input type="number" id="tinggi" class="form-control">
+            <button type="button" class="btn btn-primary btn-block"
+            onclick="count()">Hitung</button>
+            Hasil Luas<input type="text" id="hasilluas" class="form-control" readonly>
+            Hasil Sisi Miring<input type="text" id="sisimiring" class="form-control" readonly>
+          </div>
+        </div>
+      </div>
+  
+</body>
+</html>
